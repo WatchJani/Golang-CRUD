@@ -8,7 +8,10 @@ require (
 	github.com/lib/pq v1.10.9
 )
 
-require github.com/savsgio/gotils v0.0.0-20230208104028-c358bd845dee // indirect
+require (
+	github.com/rs/cors v1.9.0 // indirect
+	github.com/savsgio/gotils v0.0.0-20230208104028-c358bd845dee // indirect
+)
 
 require (
 	github.com/andybalholm/brotli v1.0.5 // indirect

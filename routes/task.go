@@ -35,6 +35,7 @@ func GetAllTask(ctx *fasthttp.RequestCtx) {
 }
 
 func InsertTask(ctx *fasthttp.RequestCtx) {
+
 	requestBody := ctx.PostBody()
 
 	request := struct {
@@ -65,6 +66,7 @@ func InsertTask(ctx *fasthttp.RequestCtx) {
 }
 
 func DeleteTask(ctx *fasthttp.RequestCtx) {
+
 	taskID := ctx.UserValue("id").(string)
 
 	_, err := db.DB.Exec(DELETE_TASK, taskID)
